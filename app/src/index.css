@@ -4,3 +4,20 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 89.5%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 81.25%;
+  }
+}
