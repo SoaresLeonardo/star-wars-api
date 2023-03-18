@@ -1,8 +1,18 @@
-export default function Loading() {
+import { Circle, Container, Content, ImgLoading, LdsRing } from "./styled";
 
+export default function Loading() {
   return (
-    <>
-      <h1>Loading...</h1>
-    </>
+    <Container>
+      <Content>
+        <ImgLoading>
+        <img src="/public/logoStarWars.png" alt="Loading" />
+        </ImgLoading>
+        <LdsRing>
+          <Circle></Circle>
+          <Circle></Circle>
+          <Circle></Circle>
+        </LdsRing>
+      </Content>
+    </Container>
   );
 }
