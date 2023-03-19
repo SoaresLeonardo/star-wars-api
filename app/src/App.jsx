@@ -24,7 +24,7 @@ export default function App() {
 
   const [dataStarships, setDataStarships] = useState([]);
 
-  // URL base das imagens films, planetas, personagens, species
+  // URL base das imagens films, planetas, personagens, species, vehicles, starships
   const imageURL1 = "https://starwars-visualguide.com/assets/img/films/";
   const imageURL2 = "https://starwars-visualguide.com/assets/img/characters/";
   const imageURL3 = "https://starwars-visualguide.com/assets/img/planets/";
