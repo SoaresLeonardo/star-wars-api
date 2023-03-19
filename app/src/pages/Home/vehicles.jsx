@@ -6,21 +6,21 @@ import {
 } from "../../components/Card";
 import { Container, Content, Title, TitleContainer } from "./styled";
 
-export default function People({ data, img }) {
+export default function Vehicles({ data, img }) {
   return (
     <Container>
       <TitleContainer>
-        <Title>Personagens</Title>
+        <Title>Vehicles</Title>
       </TitleContainer>
       <Content>
         <CardsWrapper>
-          {data.map((people) => (
+          {data.map((vehicles) => (
             <Card>
               <CardImage
-                src={`${img}${people.url.replace(/\D/g, "")}.jpg`}
-                alt={people.name}
+                src={`${img}${vehicles.url.replace(/\D/g, "")}.jpg`}
+                alt={vehicles.name}
               />
-              <CardTitle>{people.name}</CardTitle>
+              <CardTitle>{vehicles.name}</CardTitle>
             </Card>
           ))}
         </CardsWrapper>

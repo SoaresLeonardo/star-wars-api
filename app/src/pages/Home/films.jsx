@@ -16,7 +16,10 @@ export default function Films({ data, img }) {
         <CardsWrapper>
           {data.map((film) => (
             <Card>
-              <CardImage src={`${img}${film.url.replace(/\D/g, "")}.jpg`} />
+              <CardImage
+                src={`${img}${film.url.replace(/\D/g, "")}.jpg`}
+                alt={film.title}
+              />
               <CardTitle>{film.title}</CardTitle>
             </Card>
           ))}

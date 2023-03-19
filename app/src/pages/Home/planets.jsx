@@ -16,7 +16,10 @@ export default function Planets({ data, img }) {
         <CardsWrapper>
           {data.map((planet) => (
             <Card>
-              <CardImage src={`${img}${planet.url.replace(/\D/g, "")}.jpg`} />
+              <CardImage
+                src={`${img}${planet.url.replace(/\D/g, "")}.jpg`}
+                alt={planet.name}
+              />
               <CardTitle>{planet.name}</CardTitle>
             </Card>
           ))}
