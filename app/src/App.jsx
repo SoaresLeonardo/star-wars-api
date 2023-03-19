@@ -1,17 +1,15 @@
 import { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Routes as Switch,
-  Route,
-} from "react-router-dom";
 import Home from "./pages/Home/index";
 
 export default function App() {
   // Lista dos filmes
   const [dataFilms, setDataFilms] = useState([]);
+  // Lista dos planetas
+  const [dataPlanets, setDataPlanets] = useState([]);
 
-  // URL base das imagens
-  const image_url = "https://starwars-visualguide.com/assets/img/films/";
+  // URL base das imagens films, planetas,
+  const imageURL1 = "https://starwars-visualguide.com/assets/img/films/";
+  const imageURL2 = "https://starwars-visualguide.com/assets/img/planets/";
 
   // Estado do loading...
   const [loading, setLoading] = useState(false);
@@ -19,33 +17,32 @@ export default function App() {
   // Função que realiza o FECTH
   const fecthData = async (url) => {
     setLoading(true);
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      setLoading(false);
-      setDataFilms(data.results);
-    } catch (err) {
-      console.log(err);
-    }
+    return fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        setLoading(false);
+        return data;
+      });
   };
 
   useEffect(() => {
-    const films = "https://swapi.dev/api/films";
-    fecthData(films);
+    // Dados dos filmes
+    fecthData("https://swapi.dev/api/films").then((data) => {
+      setDataFilms(data.results);
+    });
+    // Dados dos planetas
+    fecthData("https://swapi.dev/api/planets").then((data) => {
+      setDataPlanets(data.results);
+    });
   }, []);
 
   return (
-    <>
-      <Router>
-        <Switch>
-          <Route
-            path="/"
-            element={
-              <Home loading={loading} data={dataFilms} imageURL={image_url} />
-            }
-          />
-        </Switch>
-      </Router>
-    </>
+    <Home
+      loading={loading}
+      dataFilms={dataFilms}
+      imageFilmsURL={imageURL1}
+      imageURL2={imageURL2}
+      dataPlanets={dataPlanets.slice(1)}
+    />
   );
 }
