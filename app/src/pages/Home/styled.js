@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   margin-top: 70px;
   flex-direction: column;
+ 
 `;
 
 export const Content = styled.div`
@@ -13,6 +14,7 @@ export const Content = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
   max-width: 1300px;
+  width: 90%;
 `;
 
 export const TitleContainer = styled.div`
