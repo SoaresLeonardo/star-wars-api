@@ -6,7 +6,7 @@ export default function Planets({ data, img }) {
       {data.map((planet) => (
         <Card>
           <CardImage src={`${img}${planet.url.replace(/\D/g, "")}.jpg`} />
-          <CardTitle>{planet.title}</CardTitle>
+          <CardTitle>{planet.name}</CardTitle>
         </Card>
       ))}
     </CardsWrapper>

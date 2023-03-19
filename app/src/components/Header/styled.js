@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* background-color: #ffc107; */
+  background-color: #151515;
   display: flex;
   align-items: center;
   justify-content: center;
- 
-  /* border-bottom: 1px solid #1c1c1e; */
+  border-bottom: 1px solid #1c1c1e;
 `;
 export const Content = styled.div`
   display: flex;

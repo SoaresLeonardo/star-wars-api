@@ -14,15 +14,18 @@ export default function Home(props) {
   return (
     <>
       <Header />
-      <TitleContainer>
-        <Title>Filmes</Title>
-      </TitleContainer>
       <Container>
+        <TitleContainer>
+          <Title>Filmes</Title>
+        </TitleContainer>
         <Content>
           <Films data={props.dataFilms} img={props.imageFilmsURL} />
         </Content>
       </Container>
       <Container>
+        <TitleContainer>
+          <Title>Planetas</Title>
+        </TitleContainer>
         <Content>
           <Planets data={props.dataPlanets} img={props.imageURL2} />
         </Content>
