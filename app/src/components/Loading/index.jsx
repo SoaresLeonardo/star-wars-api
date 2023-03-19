@@ -5,7 +5,7 @@ export default function Loading() {
     <Container>
       <Content>
         <ImgLoading>
-        <img src="/public/logoStarWars.png" alt="Loading" />
+        <img src="/logoStarWars.png" alt="Loading" />
         </ImgLoading>
         <LdsRing>
           <Circle></Circle>
