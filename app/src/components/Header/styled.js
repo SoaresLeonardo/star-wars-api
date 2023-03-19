@@ -12,6 +12,7 @@ export const Content = styled.div`
   /* width: 1120px; */
   align-items: center;
   padding: 0 20px;
+  position: relative;
 `;
 
 export const ImgHeader = styled.div`

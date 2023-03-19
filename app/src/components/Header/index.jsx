@@ -1,8 +1,6 @@
-import {
-  Container,
-  Content,
-  ImgHeader,
-} from "./styled";
+import { Container, Content, ImgHeader } from "./styled";
+
+import { AiFillGithub } from "react-icons/ai";
 
 export default function Header() {
   return (

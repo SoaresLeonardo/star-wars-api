@@ -12,10 +12,12 @@ export const Content = styled.div`
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  max-width: 1200px;
+  max-width: 1300px;
 `;
 
 export const TitleContainer = styled.div`
-  margin-left: 15px;
+  margin-bottom: 15px;
 `;
-export const Title = styled.h1``;
+export const Title = styled.h1`
+  font-size: 2.5rem;
+`;
