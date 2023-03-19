@@ -11,3 +11,8 @@ export const Content = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
 `;
+
+export const TitleContainer = styled.div`
+  margin-left: 15px;
+`;
+export const Title = styled.h1``;

@@ -1,9 +1,9 @@
 import Films from "../../components/Films";
 import Header from "../../components/Header";
 import Loading from "../../components/Loading";
-import { Container, Content } from "./styled";
+import { Container, Content, Title, TitleContainer } from "./styled";
 
-                            // Destructuring
+// Destructuring
 export default function Home({ loading, data, imageURL }) {
   document.title = "Star Wars - Films";
 
@@ -15,6 +15,9 @@ export default function Home({ loading, data, imageURL }) {
   return (
     <>
       <Header />
+      <TitleContainer>
+        <Title>Filmes</Title>
+      </TitleContainer>
       <Container>
         <Content>
           <Films data={data} img={imageURL} />

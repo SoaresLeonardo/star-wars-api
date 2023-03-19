@@ -25,10 +25,10 @@ export const Circle = styled.div`
   width: 45px;
   height: 45px;
   margin: 8px;
-  border: 5px solid #000;
+  border: 5px solid white;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #000 transparent transparent transparent;
+  border-color: white transparent transparent transparent;
 
   @keyframes lds-ring {
     0% {

@@ -9,7 +9,7 @@ export default function Header() {
     <Container>
       <Content>
         <ImgHeader>
-          <img src="/public/logoStarWars2.png" alt="Logo Star Wars" />
+          <img src="/public/logoStarWars.png" alt="Logo Star Wars" />
         </ImgHeader>
       </Content>
     </Container>
