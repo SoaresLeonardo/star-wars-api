@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
+import Films from "../../components/Films";
+
 import Header from "../../components/Header";
 import Loading from "../../components/Loading";
+import { Container, Content } from "./styled";
 
-export default function Films() {
+export default function Home() {
   document.title = "Star Wars - Films";
 
   const [data, setData] = useState([]);
+
+  const image_url = "https://starwars-visualguide.com/assets/img/films/";
 
   // Estado do loading...
   const [loading, setLoading] = useState(false);
@@ -34,10 +39,12 @@ export default function Films() {
 
   return (
     <>
-    <Header/>
-    {data.map((film) => (
-      <div>{film.title}</div>
-    ))}
+      <Header />
+      <Container>
+        <Content>
+          <Films data={data} img={image_url} />
+        </Content>
+      </Container>
     </>
   );
 }

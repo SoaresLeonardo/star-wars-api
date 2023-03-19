@@ -15,25 +15,7 @@ export const Content = styled.div`
   justify-content: space-between;
   padding: 0 20px;
 `;
-export const SearchButtonContainer = styled.div`
-  input {
-    border: none;
-    outline: none;
-    font-size: 1rem;
-  }
 
-  display: flex;
-  align-items: center;
-  border: 1px solid gray;
-  padding: 8px;
-  border-radius: 20px;
-`;
-export const SearchButton = styled.button`
-  border: none;
-  background-color: inherit;
-  font-size: 1.3rem;
-  margin-left: 10px;
-`;
 export const ImgHeader = styled.div`
   img {
     width: 80px;
