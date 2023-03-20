@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Card,
   CardImage,
@@ -16,10 +17,12 @@ export default function Films({ data, img }) {
         <CardsWrapper>
           {data.map((film) => (
             <Card>
-              <CardImage
-                src={`${img}${film.url.replace(/\D/g, "")}.jpg`}
-                alt={film.title}
-              />
+              <Link to={`/details/films/${film.url.replace(/\D/g, "")}`}>
+                <CardImage
+                  src={`${img}${film.url.replace(/\D/g, "")}.jpg`}
+                  alt={film.title}
+                />
+              </Link>
               <CardTitle>{film.title}</CardTitle>
             </Card>
           ))}

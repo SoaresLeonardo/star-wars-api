@@ -8,6 +8,12 @@ import Species from "./pages/Home/species";
 import Starships from "./pages/Home/starships";
 import Vehicles from "./pages/Home/vehicles";
 
+import {
+  BrowserRouter as Router,
+  Routes as Switch,
+  Route,
+} from "react-router-dom";
+
 export default function App() {
   document.title = "Star Wars - Films";
 
