@@ -48,3 +48,6 @@ export const DetailsIntro = styled.div`
 `;
 export const Title = styled.h1``;
 export const Description = styled.p``;
+export const Director = styled.span``;
+export const Producer = styled.span``;
+export const ReleaseDate = styled.span``;

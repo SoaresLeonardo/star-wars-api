@@ -7,6 +7,9 @@ import {
   Description,
   DetailsImage,
   DetailsIntro,
+  Director,
+  Producer,
+  ReleaseDate,
   Title,
 } from "./styled";
 
@@ -63,6 +66,9 @@ export default function Details() {
           <DetailsIntro>
             <Title>{dataDetails.title}</Title>
             <Description>{dataDetails.description}</Description>
+            <Director>{dataDetails.director}</Director>
+            <Producer>{dataDetails.producer}</Producer>
+            <ReleaseDate>{dataDetails.releaseDate}</ReleaseDate>
           </DetailsIntro>
         </Content>
       </Container>
